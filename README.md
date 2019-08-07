@@ -50,8 +50,8 @@ Loss: 0.508
 Accuracy: 0.832
 
 
-<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/lstm_pred.png" align="left" height="48" width="48" ></a>
-<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/lstm_pred2.png" align="left" height="48" width="48" ></a>
+<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/lstm_pred.png" height="200" width="100" ></a>
+<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/lstm_pred2.png" height="200" width="100" ></a>
 
 ## Comments and thoughts:
 * When it comes to creating features:
@@ -82,5 +82,6 @@ product name.
 * Write functions to compute the average of the word vectors in each gender/size/color/style list.
 * Compute the cosine similarity between each token in a product name and each of the gender/size/color/style average vector, get the token with biggest similarity score( with a threshold sett also), this token will belong to gender/size/color/style categories.
 
-<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/get_traits.png" align="left" height="48" width="48" ></a>
-<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/attributes.png" align="left" height="48" width="48" ></a>
+
+<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/get_traits.png" height="200" width="100" ></a>
+<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/attributes.png" height="200" width="100" ></a>
