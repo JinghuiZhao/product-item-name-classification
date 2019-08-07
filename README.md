@@ -2,16 +2,16 @@
 
 For the online transactions, there are about 12K product item names in the dataset( ecommerce_product_names.csv ).
 
-## a.) If we want to understand which catalog (such as clothing, shoes, accessories, beauty, jewelry etc.) each item is, how will you make that happen?
+### a.) If we want to understand which catalog (such as clothing, shoes, accessories, beauty, jewelry etc.) each item is, how will you make that happen?
 
 I requested the amazon product items with category labels.
 Since one item can have multiple labels (like cuff links can be categorized as accessory and jewelry), 
 it makes sense to train is a multilabel classifier with Sigmoid Cross Entropy Loss.
 In this context, what I’m going to train is a multiclass classifier for simplicity.
 
-## Machine learning
+### Machine learning
 
-### Workflow:
+#### Workflow:
 
 Data processing:
 * Load json files and compute the labels on this Amazon product data.
@@ -49,8 +49,8 @@ After 10 epochs, on test set
 Loss: 0.508
 Accuracy: 0.832
 
-![alt text](https://github.com/JinghuiZhao/product-item-name-classification/blob/master/lstm_pred.png)
-![alt text](https://github.com/JinghuiZhao/product-item-name-classification/blob/master/lstm_pred2.png)
+![alt text](https://github.com/JinghuiZhao/product-item-name-classification/blob/master/lstm_pred.png =250x250)
+![alt text](https://github.com/JinghuiZhao/product-item-name-classification/blob/master/lstm_pred2.png =250x250)
 
 
 ## Comments and thoughts:
@@ -65,7 +65,7 @@ product name.
 
 
 
-## b.) How can you extract the additional information from the item names, such as the color, style, size, material, gender etc. if there is any?
+### b.) How can you extract the additional information from the item names, such as the color, style, size, material, gender etc. if there is any?
 
 <li> It would make sense if I extract the additional information under each class. Multileveled or hirearchical classifier would achieve better accuracy and save more time, since for each category, the adjective words can be really different. For example, in the most frequent fixed 2 grams, ‘Genuine Leather’ appears with ‘Belt’, ‘Bath’ appears with ‘Towel’, rather than ‘Genuine Leather’ appears with ‘towel’. </li>
 
@@ -82,6 +82,6 @@ product name.
 * Write functions to compute the average of the word vectors in each gender/size/color/style list.
 * Compute the cosine similarity between each token in a product name and each of the gender/size/color/style average vector, get the token with biggest similarity score( with a threshold sett also), this token will belong to gender/size/color/style categories.
 
-![alt text](https://github.com/JinghuiZhao/product-item-name-classification/blob/master/get_traits.png)
-![alt text](https://github.com/JinghuiZhao/product-item-name-classification/blob/master/attributes.png)
+![alt text](https://github.com/JinghuiZhao/product-item-name-classification/blob/master/get_traits.png =250x250)
+![alt text](https://github.com/JinghuiZhao/product-item-name-classification/blob/master/attributes.png =250x250)
 
