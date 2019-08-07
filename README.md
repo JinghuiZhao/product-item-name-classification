@@ -83,5 +83,5 @@ product name.
 * Compute the cosine similarity between each token in a product name and each of the gender/size/color/style average vector, get the token with biggest similarity score( with a threshold sett also), this token will belong to gender/size/color/style categories.
 
 
-<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/get_traits.png" height="500" width="400" ></a>
-<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/attributes.png" height="300" width="300" ></a>
+<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/get_traits.png" height="500" width="300" ></a>
+<a href="url"><img src="https://github.com/JinghuiZhao/product-item-name-classification/blob/master/attributes.png" height="500" width="400" ></a>
